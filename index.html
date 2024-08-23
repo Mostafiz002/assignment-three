@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> 
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/902fcacdb4.js" crossorigin="anonymous"></script> 
     <!-- daisyUi cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,16 +25,75 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'btn-color': 'rgb(231, 111, 81)',              }
+                'nav-btn': 'rgb(171, 239, 95)',              
+                'custom-black': 'rgb(28, 28, 28)',              
+                'btn-color-2': 'rgba(171, 239, 95, 0.5)',              
+                'h-color': 'rgb(33, 33, 33)',              
+                'p-color': 'rgb(73, 73, 73)',              
+                'main-bg': 'rgba(244, 244, 244, 1);',        }
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="bg-main-bg">
     <!-- header container  -->
-    <header>
-
+    <header class="  ">
+      <div class="bg-gradient-to-t from-bg-main-bg to-white">
+        <nav class="max-w-screen-xl mx-auto px-5 lg:px-14">
+          <div class="navbar">
+            <div class="navbar-start">
+              <a class="text-3xl font-bold p-0 relative"><i class="fa-solid fa-arrow-right text-sm absolute top-1 px-2.5 py-1.5 bg-nav-btn text-custom-black rounded-full font-semibold -rotate-45"></i><span class="ml-1 pl-9">Rinterio</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base">
+                <li><a class="font-semibold">Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn px-4.5 py-0 rounded-full lg:hidden ">
+                  <i class="fa-solid fa-bars justify-start text-2xl font-semibold"></i>
+                </div>
+              </div>
+              <div class="hidden lg:block md:block">
+                <i class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full"></i>
+              </div>
+              <div class="hidden lg:block md:block">
+                <i class="fa-solid fa-cart-shopping mx-2 p-2 bg-white rounded-full"></i>
+              </div>
+              <button
+              class="bg-nav-btn px-5 py-3 font-bold rounded-full text-custom-black font-bold hidden lg:block md:block"
+            >
+            Book Consult 
+               <i class="fa-solid fa-arrow-right text-sm ml-1 font-semibold px-2 py-1 bg-black text-white rounded-full -rotate-45"></i>
+            </button>
+            </div>
+          </div>
+        </nav>
+        <!-- hero container  -->
+        <div class="hero min-h-screen">
+          <div class="hero-content text-center justify-center">
+            <div class="space-y-6">
+              <img class="mx-auto" src="assets/banner.png" alt="">
+              <h1 class="text-3xl lg:text-6xl font-bold mx-auto w-[85%] text-h-color">A barn house of this design has a striking appearance</h1>
+              <p class="text-p-color mx-auto w-[86%] lg:w-[80%] text-sm lg:text-base">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button
+              class="bg-btn-color-2 px-28 md:px-5 lg:px-5 py-3 font-bold rounded-full text-custom-black font-bold mb-10"
+            >
+            View Details 
+               <i class="fa-solid fa-arrow-right text-sm ml-1 font-semibold px-2 py-1 bg-nav-btn rounded-full -rotate-45"></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div> 
     </header>
     <!-- main container -->
     <main>
