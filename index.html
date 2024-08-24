@@ -34,6 +34,7 @@
                 'yellow': 'rgb(239, 218, 110)',              
                 'paste': 'rgb(164, 218, 195)',              
                 'blue': 'rgb(119, 170, 234)',              
+                'off-green': 'rgba(171, 239, 95, 0.2)',              
                 'main-bg': 'rgba(244, 244, 244, 1);',        }
             }
           }
@@ -142,7 +143,7 @@
         </div>
       </section>
       <!-- work process container   -->
-      <section class="pb-7 lg:pb-28">
+      <section class="pb-7 lg:pb-24">
         <!-- content  -->
         <div class="text-center space-y-6 mb-6 lg:mb-8">
           <button
@@ -190,8 +191,100 @@
         </div> 
       </section>
       <!-- portfolio container   -->
-      <section>
-        
+      <section class="lg:bg-white pt-7 lg:pt-24 pb-7 lg:pb-24">
+        <!-- content  -->
+        <div class="text-center space-y-6 mb-6 lg:mb-8">
+          <button
+              class="bg-off-green px-4 py-2 font-bold rounded-full text-custom-black text-base"><i class="fa-solid fa-arrow-right text-base font-semibold"></i> Explore our Latest works 
+          </button>
+          <h3 class="text-2xl lg:text-4xl font-bold text-h-color">Our Latest Portfolio</h3>
+          <p class="text-p-color text-sm lg:text-base pl-10 lg:pl-28 pr-10 lg:pr-28 lg:w-[60%] mx-auto">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- parent card 1 -->
+        <div class="max-w-screen-xl mx-auto px-5 lg:px-14 grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-y-0 gap-x-0 lg:gap-x-6 justify-center">
+          <!-- child 1 -->
+          <div class="bg-white flex flex-col lg:flex-row gap-6 p-4 mb-6 lg:mb-8 rounded-2xl border col-span-2">
+            <img src="assets/img1.png" alt="">
+            <div class="space-y-4 flex flex-col justify-center">
+              <h5 class="font-bold text-base lg:text-xl">Commercial</h5>
+              <p class="text-p-color text-sm lg:text-base">
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+              </p>
+              <button class="bg-transparent text-left font-bold rounded-full text-custom-black font-bold">
+            View Details 
+               <i class="fa-solid fa-arrow-right text-sm ml-1 font-semibold px-2 py-1 bg-nav-btn rounded-full -rotate-45"></i>
+            </button>
+            </div>
+          </div>
+          <!-- child 2 -->
+          <div class="bg-white p-4 rounded-2xl border mb-6 lg:mb-8">
+            <img src="assets/img2.png" class="h-full w-full object-cover" alt="">
+          </div>
+        </div> 
+        <!-- parent card 2 -->
+        <div class="max-w-screen-xl mx-auto px-5 lg:px-14 grid grid-cols-1 lg:grid-cols-4 gap-y-6 lg:gap-y-0 gap-x-0 lg:gap-x-6">
+          <!-- child 1 -->
+          <div class="bg-white p-4 rounded-2xl border">
+            <img src="assets/img3.png" class="h-full w-full object-cover" alt="">
+          </div>
+          
+          <!-- child 2 -->
+          <div class="bg-white flex flex-col lg:flex-row gap-6 p-4 rounded-2xl border col-span-2">
+            <img src="assets/img4.png" alt="">
+            <div class="space-y-5 flex flex-col justify-center">
+              <h5 class="font-bold text-base lg:text-xl">Commercial</h5>
+              <p class="text-p-color text-sm lg:text-base">
+                The barn house captivates with its blend of rustic charm and modern. 
+              </p>
+              <button class="bg-transparent font-bold text-left rounded-full text-custom-black font-bold">
+            View Details 
+               <i class="fa-solid fa-arrow-right text-sm ml-1 font-semibold px-2 py-1 bg-nav-btn rounded-full -rotate-45"></i>
+            </button>
+            </div>
+          </div>
+          <div class="space-y-6 ">
+            <!-- child 3 -->
+            <div class="bg-white p-4 rounded-2xl border">
+              <img src="assets/img5.png" class="h-full w-full object-cover" alt="">
+            </div>
+            <!-- child 4 -->
+            <div class="lg:hidden bg-white p-4 rounded-2xl border ">
+              <img src="assets/img3.png" class="h-full w-full object-cover" alt="">
+            </div>
+          </div>
+        </div>
+      </section> 
+      <!-- contact section  -->
+      <section class="pt-7 lg:pt-24 pb-12 lg:pb-24 bg-cover bg-no-repeat" style="background-image: url(assets/bg.jpg);">
+        <!-- content  -->
+        <div class="text-center space-y-6 mb-6 lg:mb-8">
+          <button
+              class="bg-off-green px-4 py-2 font-bold rounded-full text-custom-black text-base"><i class="fa-solid fa-arrow-right text-base font-semibold"></i> Let’s Connect 
+          </button>
+          <h3 class="text-2xl lg:text-4xl font-bold text-h-color">Let’s Discuss Next Project</h3>
+          <p class="text-p-color text-sm lg:text-base pl-10 lg:pl-28 pr-10 lg:pr-28 lg:w-[60%] mx-auto">
+            The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- form 1   -->
+        <div class="flex flex-col lg:flex-row gap-6 justify-center mx-auto">
+          <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-md border-0 rounded-full" />
+          <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-md border-0 rounded-full" />
+        </div> 
+        <!-- form 2   -->
+        <div class="flex flex-col lg:flex-row gap-6 justify-center mx-auto mt-6">
+          <input type="number" placeholder="Phone Number*" class="input input-bordered w-full max-w-md border-0 rounded-full" />
+          <input type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-md border-0 rounded-full" />
+        </div>
+        <!-- textarea   -->
+        <div>
+          <textarea class="textarea " placeholder="Bio"></textarea> 
+          <button class="bg-nav-btn px-5 py-3 font-bold rounded-full text-custom-black font-bold hidden   lg:block md:block"
+            >Book Consult <i class="fa-solid fa-arrow-right text-sm ml-1 font-semibold px-2 py-1 bg-black text-white rounded-full -rotate-45"></i>
+            </button>
+        </div>
       </section> 
     </main>
     <!-- footer container  -->
