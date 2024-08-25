@@ -35,6 +35,9 @@
                 'paste': 'rgb(164, 218, 195)',              
                 'blue': 'rgb(119, 170, 234)',              
                 'off-green': 'rgba(171, 239, 95, 0.2)',              
+                'footer-black': 'rgba(28, 28, 28, 1)',              
+                'footer-h': 'rgba(233, 233, 233, 1)',              
+                'footer-p': 'rgba(115, 115, 115, 1)',              
                 'main-bg': 'rgba(244, 244, 244, 1);',        }
             }
           }
@@ -288,8 +291,26 @@
       </section> 
     </main>
     <!-- footer container  -->
-    <footer>
-
+    <footer class="footer footer-center bg-footer-black text-primary-content px-5 lg:px-14 pt-20 lg:pt-24 pb-12 lg:pb-24">
+        <aside>
+          <a class="text-3xl font-bold p-0 relative"><i class="fa-solid fa-arrow-right text-sm absolute top-1 px-2.5 py-1.5 bg-nav-btn text-custom-black rounded-full font-semibold -rotate-45"></i><span class="ml-1 pl-9 text-footer-h">Rinterio</span></a>
+          <p class="text-footer-p text-sm lg:text-base pl-10 lg:pl-28 pr-10 lg:pr-28 lg:w-[60%] mt-4 mx-auto">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <nav class="text-footer-h flex flex-col md:flex-row gap-8 md:gap-24 my-8 lg:my-12">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">Services</a>
+            <a class="link link-hover">Portfolio</a>
+            <a class="link link-hover">Blogs</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+          <button
+              class="bg-nav-btn px-5 py-3 font-bold rounded-full text-custom-black font-bold"
+            >
+            Book Consult 
+               <i class="fa-solid fa-arrow-right text-sm ml-1 font-semibold px-2 py-1 bg-black text-white rounded-full -rotate-45"></i>
+            </button>
+        </aside>
     </footer>
 </body>
 </html>
